@@ -1,0 +1,7 @@
+users:
+- name: user-one
+  hosts:
+    - all
+- name: user-two
+  hosts:
+    - all

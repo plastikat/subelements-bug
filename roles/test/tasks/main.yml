@@ -1,0 +1,8 @@
+- include_tasks: included_tasks.yml
+  loop: "{{
+    users
+    | subelements ('hosts')
+  }}"
+
+- debug:
+    msg: If you see this, then include_tasks worked

@@ -1,0 +1,19 @@
+- name: test1
+  hosts: localhost
+  gather_facts: no
+  become: no
+
+  #vars:
+  #  users:
+  #  - name: one
+  #    hosts:
+  #      - all
+  #  - name: two
+  #    hosts:
+  #      - all
+
+  tasks:
+
+  - import_role:
+      name: test
+    delegate_to: localhost
